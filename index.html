@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+	<title>To-Do, Shortly</title>
+  <link href="css/style.css" rel="stylesheet">
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+  <script>
+    $(document).on('click', '.note_class', function() {
+      $(this).toggleClass('highlight');
+    });
+
+    $(document).on('click', '.remove_note', function() {
+      $(this).parent().remove();
+    });
+
+    $(document).on('click', '#add_button', function() {
+      var new_note_text = $('.add_note').val();
+      $('ul').append('<li><a class="remove_note">&otimes;</a><span class="color">&nbsp;</span><span class="note_class">'+new_note_text+'</span></li>');
+      $('.add_note').val(''); // clear input field after submitting a note
+      $('.add_note').prop('placeholder', "Add another..."); // create a new snazzy placeholder
+
+      var line_height = $('.note_class').height();
+      var last_height = $('li').last().height() - 2;
+      
+      if(last_height > line_height) {
+        $('li').last().remove();
+        alert("Please keep notes to one line, sorry.");
+      };
+    
+    });
+
+    $(document).on('click', '.clear_all', function() {
+      $('li').remove();
+    });
+  </script>
+</head>
+
+<body>
+
+  <div class="main">
+    <h1><a href="http://tgolson.com/projects/to-do-shortly/">To-Do, <em>Shortly</em></a></h1>
+    <h2><em>When you don't want to make a big deal out of it.</em></h2>
+
+    <textarea class="add_note" type="text" placeholder="Type in a note..."></textarea>
+    <button id="add_button">add note</button>
+
+    <ul>
+      <li><a class="remove_note">&otimes;</a><span class="color">&nbsp;</span>
+        <span class="note_class demo">This is a sample note. Delete me!</span>
+      </li>
+      <li><a class="remove_note">&otimes;</a><span class="color">&nbsp;</span>
+        <span class="note_class demo">And me!</span>
+      </li>
+      <li><a class="remove_note">&otimes;</a><span class="color">&nbsp;</span>
+        <span class="note_class demo">Don't forget this one.</span>
+      </li>
+    </ul>
+
+    <p class="bottom_hints">Click notes to toggle highlight. Hover and click '&otimes;' to delete, or <a class="clear_all">clear all notes</a>.</p>
+
+  </div>
+</body>
+</html>
