@@ -121,3 +121,8 @@ li:hover > .remove_note {
 .bottom_hints a:hover{
 	background-color: #F26A3A;
 }
+
+footer {
+    margin-top: 40px;
+    color: #B2C2E0;
+}
