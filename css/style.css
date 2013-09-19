@@ -75,7 +75,7 @@ li {
 	color: #001433;
 }
 
-li:hover > .remove_note {
+li:hover .remove_note {
 	color: #F15A24;
 }
 
