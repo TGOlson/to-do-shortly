@@ -67,12 +67,8 @@ li {
 	color: #B2C2E0;
 	font-size: 35px;
 	margin-bottom: 7px;
+	cursor: default;
 } 
-
-span {
-	margin: 0px;
-	padding: 0px;
-}
 
 .remove_note {
 	text-decoration: none;
@@ -86,18 +82,12 @@ li:hover > .remove_note {
 .color {
 	background-color: #F15A24;
 	margin-left: 2px;
-	cursor: default;
 }
 
 .note_class {
 	background-color: #4D70DB;
 	margin-left: 4px;
 	padding: 0px 3px 0px 3px;
-	cursor: default;
-}
-
-.demo {
-	margin-left: -6px;
 }
 
 .highlight {
@@ -111,7 +101,6 @@ li:hover > .remove_note {
 }
 
 .bottom_hints a{
-	font-size: 15px;
 	color: #fff;
 	background-color: #F15A24;
 	text-decoration: none;
