@@ -19,8 +19,15 @@ $(document).on('click', '#add_button', function() {
     $('li').last().remove();
     alert("Please keep notes to one line, sorry.");
   };
-
 });
+
+// code for 'enter' functionality
+
+//$(document).keypress(function(e) {
+//    if(e.which == 13) {
+//      $('#add_button').click();
+//    }
+//});
 
 $(document).on('click', '.clear_all', function() {
   $('li').remove();
