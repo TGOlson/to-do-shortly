@@ -1,6 +1,6 @@
 <h1>To-Do, <em>Shortly</em></h1>
 
-<h2>An app for simple to-do lists.
+<h3>An app for simple to-do lists.</h3>
 
 <p>Add notes, highlight notes, and delete notes.</p>
 
@@ -14,7 +14,7 @@
 
 <p>See the working example here: http://tgolson.com/projects/to-do-shortly/</p>
 
-<h2>How to use:</h2>
+<h3>How to use:</h3>
 
 <ul>
 	<li>Type note in text box!</li>
