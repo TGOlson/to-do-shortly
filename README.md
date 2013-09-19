@@ -18,8 +18,8 @@
 
 <ul>
 	<li>Type note in text box!</li>
-	<li>Hit 'add note'!</li>
-	<li>Look at note!</li>
-	<li>Highlight note by clicking on it!</li>
-	<li>Delete note by hovering over note and clicking the 'x'!</li>
+	<li>Hit 'add note'</li>
+	<li>Look at note</li>
+	<li>Highlight note by clicking on it</li>
+	<li>Delete note by hovering over note and clicking the 'x'</li>
 </ul>
