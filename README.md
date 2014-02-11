@@ -12,7 +12,7 @@
 	<li>No editing</li>
 </ul>
 
-<p>See the working example here: http://tgolson.com/projects/to-do-shortly/</p>
+<p>See the working example here: http://tgolson.com/projects/to-do-shortly/ (link borken - need to update new version)</p>
 
 <h3>How to use:</h3>
 
